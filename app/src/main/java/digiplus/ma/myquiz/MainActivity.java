@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button button;
+    Button button, Start, Cancel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         DisplayAreaONE(AreaONEMsg);
         button = findViewById(R.id.Submit);
                 button.setVisibility(View.GONE);
+        Start = findViewById(R.id.Start);
+                Start.setVisibility(View.VISIBLE);
+        Cancel = findViewById(R.id.Cancel);
+                Cancel.setVisibility(View.VISIBLE);
     }
 
     private void DisplayAreaONE(String AreaONEMsg) {
@@ -46,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         AreaONE.setText(AreaONEMsg);
     }
     private String DisplayAreaONE(String name, boolean OneIsChecked, Boolean TowIsChecked) {
-        String AreaMessage = (name);
+        String AreaMessage = getString(R.string.Welcome ,name);
         //AreaMessage += "\n 1" + (OneIsChecked);
         //AreaMessage += "\n 2" + (TowIsChecked);
         return AreaMessage;

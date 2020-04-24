@@ -1,7 +1,9 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">MyQuiz</string>
     <string name="Name">Name</string>
     <string name="Area1"></string>
     <string name="Submit">Submit</string>
-
+    <string name="Welcome">Welcome <xliff:g id="N">%s</xliff:g> to My QUIZ App. Are you ready ?</string>
+    <string name="Start">Start</string>
+    <string name="Cancel">Cancel</string>
 </resources>
