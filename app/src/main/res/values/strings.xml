@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyQuiz</string>
+    <string name="Name">Name</string>
+    <string name="Area1">Area1</string>
+    <string name="Submit">Submit</string>
+
 </resources>
