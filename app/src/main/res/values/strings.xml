@@ -6,4 +6,20 @@
     <string name="Welcome">Welcome <xliff:g id="N">%s</xliff:g> to My QUIZ App. Are you ready ?</string>
     <string name="Start">Start</string>
     <string name="Cancel">Cancel</string>
+    <string name="QuesionTitle">Question : </string>
+    <string name="QuesionOne">What caused Coronavirus?</string>
+    <string name="QoneAnswerONE">People eating weird food</string>
+    <string name="QoneAnswerTWO">A virus jumping from animals to humans</string>
+    <string name="QoneAnswerThree">It arrived on a meteoriye outer space</string>
+    <string name="QuesionTwo">Which of these is the best way to stop the spread of Coronavirus?</string>
+    <string name="QTwoAnswerONE">Wearing a scarf around your face</string>
+    <string name="QTwoAnswerTOW">Sneezing into a hanky</string>
+    <string name="QuesionThree">When you are washing your hands (very important!) - how long should you do it for?</string>
+    <string name="QTheeAnswerThree">20 hours, with or without soap</string>
+    <string name="QuesionFour">When you are washing your hands (very important!) - how long should you do it for?</string>
+    <string name="QFourAnswerONE">20 seconds, with soap</string>
+    <string name="QFourAnswerTOW">20 minutes, but with no soap</string>
+    <string name="QFourAnswerThree">20 hours, with or without soap</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Result">Result</string>
 </resources>
