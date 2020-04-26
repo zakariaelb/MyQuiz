@@ -70,9 +70,10 @@ public class MainActivity extends AppCompatActivity {
     public void str(View view) {
         StartQuiz();
     }
-
     private void StartQuiz() {
         Intent intent = new Intent(this, MainQuiz.class);
         startActivity(intent);
     }
 }
+
+

@@ -112,13 +112,13 @@
             android:id="@+id/buttonEND"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="DisplayResult"
             android:text="@string/Confirm" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/DisplayResultArea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="DisplayResult"
             android:text="@string/Result" />
     </LinearLayout>
 </ScrollView>
