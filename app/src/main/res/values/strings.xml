@@ -1,12 +1,13 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">MyQuiz</string>
     <string name="Name">Name</string>
+    <string name="point"></string>
     <string name="Area1"></string>
     <string name="Submit">Submit</string>
     <string name="Welcome">Welcome <xliff:g id="N">%s</xliff:g> to My QUIZ App. Are you ready ?</string>
     <string name="Start">Start</string>
     <string name="Cancel">Cancel</string>
-    <string name="QuesionTitle">Question : </string>
+    <string name="QuesionTitle">Start COVID 19 QUIZ : </string>
     <string name="QuesionOne">What caused Coronavirus?</string>
     <string name="QoneAnswerONE">People eating weird food</string>
     <string name="QoneAnswerTWO">A virus jumping from animals to humans</string>

@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         Start = findViewById(R.id.Start);
         Start.setVisibility(View.VISIBLE);
         Cancel = findViewById(R.id.Cancel);
-        Cancel.setVisibility(View.VISIBLE);
+        Cancel.setVisibility(View.GONE);
     }
 
     private void DisplayAreaONE(String AreaONEMsg) {
@@ -63,8 +63,12 @@ public class MainActivity extends AppCompatActivity {
     public void Startbtn(View view) {
         EditName = findViewById(R.id.Name);
         EditName.setVisibility(View.GONE);
-        String QuestionOne = getString(R.string.QuesionTitle) + "\n" + getString(R.string.QuesionOne);
+        String QuestionOne = getString(R.string.QuesionTitle) + "\n" + getString(R.string.point);
         DisplayAreaONE(QuestionOne);
+        Start = findViewById(R.id.Start);
+        Start.setVisibility(View.GONE);
+        Cancel = findViewById(R.id.Cancel);
+        Cancel.setVisibility(View.VISIBLE);
     }
 
     public void str(View view) {
