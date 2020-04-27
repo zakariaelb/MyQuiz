@@ -191,16 +191,5 @@ public class MainQuiz extends AppCompatActivity {
     public void DisplayResult(View view) {
         CheckAnswer();
     }
-
-    private int ResulatRecap(int TotalPoint) {
-        int Message = TotalPoint;
-        return Message;
-    }
-
-    private void displayResult(int message) {
-        TextView displayResultF = (TextView) findViewById(R.id.DisplayResultArea);
-        displayResultF.setText(message);
-    }
-
-    }
+        }
 

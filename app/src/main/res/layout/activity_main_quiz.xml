@@ -13,10 +13,13 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
             android:text="@string/QuesionTitle" />
 
         <TextView
             android:id="@+id/textView1"
+            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/QuesionOne" />
@@ -40,6 +43,7 @@
             android:text="@string/QoneAnswerThree" />
         <TextView
             android:id="@+id/textView2"
+            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/QuesionTwo" />
@@ -63,6 +67,7 @@
             android:text="@string/QoneAnswerThree" />
         <TextView
             android:id="@+id/textView3"
+            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/QuesionThree" />
@@ -86,6 +91,7 @@
             android:text="@string/QTheeAnswerThree" />
         <TextView
             android:id="@+id/textView4"
+            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/QuesionFour" />
@@ -114,11 +120,5 @@
             android:layout_height="wrap_content"
             android:onClick="DisplayResult"
             android:text="@string/Confirm" />
-
-        <TextView
-            android:id="@+id/DisplayResultArea"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Result" />
-    </LinearLayout>
+            </LinearLayout>
 </ScrollView>
