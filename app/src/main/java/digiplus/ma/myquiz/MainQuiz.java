@@ -191,5 +191,5 @@ public class MainQuiz extends AppCompatActivity {
     public void DisplayResult(View view) {
         CheckAnswer();
     }
-        }
+}
 
