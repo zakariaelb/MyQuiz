@@ -11,16 +11,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button button, Start, Cancel;
     EditText EditName;
+    RadioGroup radioGroup;
+    RadioButton radioButton;
+    TextView TextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        radioGroup = findViewById(R.id.radioGroup);
     }
 
     public void Submit(View view) {
@@ -29,16 +36,10 @@ public class MainActivity extends AppCompatActivity {
         Editable nameEditable = nameField.getText();
         String name = nameEditable.toString();
 
-        //CheckBox One
-        CheckBox AnswerONE = (CheckBox) findViewById(R.id.CheckOne);
-        boolean OneIsChecked = AnswerONE.isChecked();
-
-        //CheckBox Tow
-        CheckBox AnswerTOW = (CheckBox) findViewById(R.id.CheckTow);
-        boolean TowIsChecked = AnswerTOW.isChecked();
-
+        int Radioid = radioGroup.getCheckedRadioButtonId();
+        radioButton = findViewById(Radioid);
         //*************
-        String AreaONEMsg = DisplayAreaONE(name, OneIsChecked, TowIsChecked);
+        String AreaONEMsg = DisplayAreaONEE(name);
         DisplayAreaONE(AreaONEMsg);
         button = findViewById(R.id.Submit);
         button.setVisibility(View.GONE);
@@ -48,16 +49,14 @@ public class MainActivity extends AppCompatActivity {
         Cancel.setVisibility(View.GONE);
     }
 
+    private String DisplayAreaONEE(String name) {
+        String AreaMessage = getString(R.string.Welcome, radioButton.getText() + name );
+        return AreaMessage;
+    }
+
     private void DisplayAreaONE(String AreaONEMsg) {
         TextView AreaONE = (TextView) findViewById(R.id.TextArea1);
         AreaONE.setText(AreaONEMsg);
-    }
-
-    private String DisplayAreaONE(String name, boolean OneIsChecked, Boolean TowIsChecked) {
-        String AreaMessage = getString(R.string.Welcome, name);
-        //AreaMessage += "\n 1" + (OneIsChecked);
-        //AreaMessage += "\n 2" + (TowIsChecked);
-        return AreaMessage;
     }
 
     public void Startbtn(View view) {
@@ -69,7 +68,12 @@ public class MainActivity extends AppCompatActivity {
         Start.setVisibility(View.GONE);
         Cancel = findViewById(R.id.Cancel);
         Cancel.setVisibility(View.VISIBLE);
-    }
+        radioButton = findViewById(R.id.RB1);
+        radioButton.setVisibility(View.GONE);
+        radioButton = findViewById(R.id.RB2);
+        radioButton.setVisibility(View.GONE);
+
+        }
 
     public void str(View view) {
         StartQuiz();
