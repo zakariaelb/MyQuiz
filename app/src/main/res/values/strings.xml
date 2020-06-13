@@ -6,23 +6,23 @@
     <string name="Submit">Submit</string>
     <string name="Welcome">Welcome <xliff:g id="N">%s </xliff:g> to My QUIZ App. Are you ready ?</string>
     <string name="Start">Start</string>
-    <string name="Cancel">Cancel</string>
     <string name="QuesionTitle">Do you want to start COVID 19 QUIZ ? </string>
-    <string name="QuesionOne">What caused Coronavirus?</string>
+    <string name="QuesionOne">Question 1 : What caused Coronavirus?</string>
     <string name="QoneAnswerONE">People eating weird food</string>
-    <string name="QoneAnswerTWO">A virus jumping from animals to humans</string>
     <string name="QoneAnswerThree">It arrived on a meteoriye outer space</string>
-    <string name="QuesionTwo">Which of these is the best way to stop the spread of Coronavirus?</string>
-    <string name="QTwoAnswerONE">Wearing a scarf around your face</string>
+    <string name="QuesionTwo">Question 2 : Which of these is the best way to stop the spread of Coronavirus?</string>
+    <string name="QTwoAnswerONE">Wearing a FaceMask around your face</string>
     <string name="QTwoAnswerTOW">Sneezing into a hanky</string>
-    <string name="QuesionThree">When you are washing your hands (very important!) - how long should you do it for?</string>
-    <string name="QTheeAnswerThree">20 hours, with or without soap</string>
-    <string name="QuesionFour">When you are washing your hands (very important!) - how long should you do it for?</string>
-    <string name="QFourAnswerONE">20 seconds, with soap</string>
-    <string name="QFourAnswerTOW">20 minutes, but with no soap</string>
-    <string name="QFourAnswerThree">20 hours, with or without soap</string>
-    <string name="Confirm">Confirm</string>
-    <string name="Result">Result</string>
+    <string name="QTwoAnswerThree">PANICKING!!!</string>
+    <string name="QuesionThree">Question 3 : When you are washing your hands (very important!) - how long should you do it for? Answer should be
+    in Second</string>
+    <string name="QuesionFour">Question 4 :  What should you try to avoid touching to stop things spreading?</string>
+    <string name="Hint">Hint : FOOT, ARMS or FACE</string>
     <string name="RB1">Mr. </string>
     <string name="RB2">Miss. </string>
+    <string name="quiz_title">MyQuiz</string>
+    <string name="question3_answer">20</string>
+    <string name="question4_answer">FACE</string>
+    <string name="Submit_Answer">Submit</string>
+    <string name="Exit">Exit</string>
 </resources>
