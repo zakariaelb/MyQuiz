@@ -49,18 +49,22 @@ public class MainQuiz extends AppCompatActivity {
     @BindView(R.id.buttonSubmit)
     Button buttonSubmit;
     @BindView(R.id.Exit)
+
     Button Exit;
     private int Check = 0;
     private Boolean Correct = false;
     private static final String TAG = "MainQuiz";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_quiz);
         ButterKnife.bind(this);
     }
+
     @OnClick({R.id.True_RB, R.id.False_RB})
-    public void Check_RB(View view) {
+    public void checkRr(View view) {
         switch (view.getId()) {
             case R.id.True_RB:
                 Correct = true;
@@ -72,29 +76,28 @@ public class MainQuiz extends AppCompatActivity {
     }
 
     @OnClick({R.id.checkBox1, R.id.checkBox2, R.id.checkBox3})
-    public void CheckBox_Controler(View view) {
+    public void checkBoxControler(View view) {
         Check = 0;
-        if (checkBox1.isChecked())
+        if(checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked()){
             Check++;
-        if (checkBox2.isChecked())
-            Check++;
-        if (checkBox3.isChecked()) {}
-    }
-    @OnClick(R.id.buttonSubmit)
-    public void Submit(View view) {
-        Score(Total());
+        }
     }
 
-    private void Score(int Earned) {
+    @OnClick(R.id.buttonSubmit)
+    public void submit(View view) {
+        score(total());
+    }
+
+    private void score(int Earned) {
         StringBuilder stringBuilder = new StringBuilder("Score : ");
         stringBuilder.append(Earned);
-        stringBuilder.append("/5");
+        stringBuilder.append("/4");
         //Display result ;
         Toast.makeText(getApplicationContext(),
                 stringBuilder.toString(), Toast.LENGTH_LONG).show();
     }
 
-    private int Total() {
+    private int total() {
         int Points = 0;
         Points += Check;
         if (Correct)
@@ -107,8 +110,9 @@ public class MainQuiz extends AppCompatActivity {
             Points++;
         return Points;
     }
+
     @OnClick(R.id.Exit)
-    public void Exit(View view){
+    public void exit(View view) {
         this.finish();
     }
 }
